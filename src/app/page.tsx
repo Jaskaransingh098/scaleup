@@ -13,15 +13,37 @@ import FaqSection from "@/components/sections/faq-section";
 import FinalCtaSection from "@/components/sections/final-cta";
 import RevealOnScroll from "@/components/ui/reveal-on-scroll";
 import Footer from "@/components/sections/footer";
+import RippleGrid from "@/components/ui/RippleGrid";
+import Squares from "@/components/ui/Squares";
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen">
+    <div
+      className="relative min-h-screen"
+      style={{
+        background: "linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045)",
+      }}
+    >
       {/* Background image */}
-      <div className="absolute inset-0 bg-[url('/pattern.jpg')] bg-no-repeat bg-center bg-fixed bg-cover z-0" />
+      {/* <div className="absolute inset-0 bg-[url('/bg-new2.png')] bg-no-repeat bg-center bg-fixed bg-cover z-0" /> */}
+      <div className="fixed inset-0 z-20" style={{ opacity: 0.3 }}>
+        <Squares
+          speed={0.2}
+          squareSize={120}
+          direction="diagonal" // up, down, left, right, diagonal
+          borderColor="#fff"
+          hoverFillColor="#222"
+        />
+      </div>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/30 z-10" />
+      <div
+        className="absolute inset-0 z-10 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%)",
+        }}
+      />
 
       {/* Content */}
       <div className="relative z-20">
@@ -38,25 +60,21 @@ export default function HomePage() {
             <CaseStudiesHeader />
           </div>
 
-          <RevealOnScroll delay={0.15}>
-            <div className="py-24">
-              <PainPoints />
-            </div>
-          </RevealOnScroll>
+          <div className="py-24">
+            <PainPoints />
+          </div>
 
           <div id="results" className="scroll-mt-[110px]">
             <ResultsShowcase />
           </div>
 
-          <RevealOnScroll delay={0.25}>
-            <div id="process" className="scroll-mt-[110px]">
-              <ProcessSection />
-            </div>
-          </RevealOnScroll>
+          <div id="process" className="scroll-mt-[110px]">
+            <ProcessSection />
+          </div>
 
-          <RevealOnScroll delay={0.3}>
+          <div>
             <TestimonialsSection />
-          </RevealOnScroll>
+          </div>
 
           <div>
             <div id="portfolio" className="scroll-mt-[110px]">
@@ -64,26 +82,26 @@ export default function HomePage() {
             </div>
           </div>
 
-          <RevealOnScroll delay={0.4}>
+          <div>
             <FoundersSection />
-          </RevealOnScroll>
+          </div>
 
-          <RevealOnScroll delay={0.45}>
+          <div>
             <div id="faq" className="scroll-mt-[110px]">
               <FaqSection />
             </div>
-          </RevealOnScroll>
+          </div>
 
-          <RevealOnScroll delay={0.5}>
+          <div>
             <div id="contact" className="scroll-mt-[110px]">
               <FinalCtaSection />
             </div>
-          </RevealOnScroll>
-          <RevealOnScroll delay={0.5}>
+          </div>
+          <div>
             <div id="contact" className="scroll-mt-[110px]">
               <Footer />
             </div>
-          </RevealOnScroll>
+          </div>
         </main>
       </div>
     </div>

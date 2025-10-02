@@ -126,7 +126,7 @@ const ResultsShowcase = () => {
         <div className="text-center mb-12 lg:mb-20">
           <h2 className="text-4xl lg:text-[48px] lg:leading-[56px] font-semibold text-white">
             We Actually{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-light-blue">
+            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
               Get Results
             </span>
           </h2>
@@ -150,7 +150,10 @@ const ResultsShowcase = () => {
         <div className="text-center mt-12 lg:mt-20">
           <a
             href="#contact"
-            className="inline-block px-8 py-4 text-base font-medium text-primary-foreground bg-primary rounded-xl shadow-[0_4px_16px_rgba(66,133,244,0.3)] transition-transform hover:scale-105 bg-gradient-to-r from-[#4285F4] to-[#6BA3FF]"
+            className="inline-block  p-4 text-white bg-white/20 backdrop-blur-2xl 
+             border border-white/30 
+             rounded-full shadow-lg 
+             hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
             Apply To Work With Us
           </a>

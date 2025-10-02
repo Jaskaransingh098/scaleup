@@ -18,7 +18,14 @@ const navLinks = [
 export default function HeaderNavigation() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md border rounded-full border-blue-400 md:border-none">
+    <header
+      className="absolute top-0 left-0 right-0 z-50 
+  bg-white/10 backdrop-blur-2xl 
+
+  border border-white/30 
+  rounded-full md:rounded-full
+  shadow-lg"
+    >
       <div className="container mx-auto px-6">
         <nav className="relative flex h-[97px] items-center justify-between">
           <Link href="/" className="relative z-20">
@@ -33,8 +40,8 @@ export default function HeaderNavigation() {
 
           {/* Desktop Navigation */}
           <div className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:block">
-            <div className="rounded-full bg-gradient-to-r border-2 border-blue-400 p-px">
-              <div className="flex items-center gap-x-1 rounded-full  py-2 pl-2 pr-6 backdrop-blur-md">
+            <div className=" p-px">
+              <div className="flex items-center gap-x-1 rounded-full  py-2 pl-2 pr-6 ">
                 {navLinks.map((link) => (
                   <a
                     key={link.name}
@@ -51,9 +58,11 @@ export default function HeaderNavigation() {
           <div className="relative z-20 hidden md:block">
             <a
               href="#contact"
-              className="rounded-xl bg-primary px-8 py-4 text-base font-medium text-primary-foreground shadow-[0_4px_16px_rgba(66,133,244,0.3)] transition-transform duration-300 hover:-translate-y-0.5"
+              className="bg-gray-800 md:rounded-full shadow-lg px-8 py-4"
             >
-              Apply To Work With Us
+              <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
+                Apply To Work With Us
+              </span>
             </a>
           </div>
 

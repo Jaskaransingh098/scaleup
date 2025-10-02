@@ -49,7 +49,7 @@ const CaseStudiesHeader = () => {
             Look at
           </h1>
           <h1 className="text-[48px] font-semibold leading-[56px]">
-            <span className="bg-gradient-to-r from-primary to-light-blue bg-clip-text text-transparent">
+            <span  className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
               What We’ve Achieved So Far
             </span>
           </h1>
@@ -58,7 +58,10 @@ const CaseStudiesHeader = () => {
 
         <Link
           href="#contact"
-          className="inline-block rounded-lg bg-gradient-to-r from-primary to-light-blue px-8 py-4 text-base font-medium text-primary-foreground shadow-[0_4px_16px_rgba(66,133,244,0.3)] transition-transform duration-300 ease-out hover:-translate-y-[2px]"
+          className="inline-block p-4 text-white bg-white/20 backdrop-blur-2xl 
+             border border-white/30 
+             rounded-full shadow-lg 
+             hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
         >
           Apply To Work With Us
         </Link>

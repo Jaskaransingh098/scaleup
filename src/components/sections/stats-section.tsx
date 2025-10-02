@@ -58,7 +58,7 @@ const StatsSection = () => {
                 </div>
                 <h2 className="text-5xl font-semibold text-text-primary">
                     Why{' '}
-                    <span className="bg-gradient-to-r from-light-blue to-primary text-transparent bg-clip-text">
+                    <span  className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
                         Choose us?
                     </span>
                 </h2>
@@ -80,7 +80,7 @@ const StatsSection = () => {
                     ))}
                 </div>
             </div>
-
+{/* 
             <div className="mt-24 w-full overflow-hidden relative" style={{ 
                 maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
                 WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
@@ -101,7 +101,7 @@ const StatsSection = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };

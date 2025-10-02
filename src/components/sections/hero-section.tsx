@@ -20,7 +20,8 @@ const HeroSection = () => {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://framerusercontent.com/images/xdaPXOEtPIASFiIeYk976HyJA.svg"
+            // src="https://framerusercontent.com/images/xdaPXOEtPIASFiIeYk976HyJA.svg"
+            src="/hero-pic.png"
             layout="fill"
             objectFit="cover"
             objectPosition="center"
@@ -33,7 +34,7 @@ const HeroSection = () => {
           className="absolute inset-x-0 bottom-0 h-full z-10 pointer-events-none"
           style={{
             background:
-              "linear-gradient(to top, #0a1a2b 0%, rgba(10,26,43,0.8) 30%, transparent 60%)",
+              "linear-gradient(to top, #0a1a2b 0%, rgba(10,26,43,0.8) 20%, transparent 60%)",
           }}
         />
 
@@ -64,9 +65,9 @@ const HeroSection = () => {
         {/* Content */}
         <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
           <div className="pt-70 flex flex-col items-center gap-6">
-            <div className="inline-block px-4 py-2 text-sm font-medium border rounded-full text-text-accent bg-card/50 border-border backdrop-blur-[2px]">
+            {/* <div className="inline-block px-4 py-2 text-sm font-medium border rounded-full text-text-accent bg-card/50 border-border backdrop-blur-[2px]">
               For Agencies, Coaches & Software Companies
-            </div>
+            </div> */}
 
             <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold text-text-primary leading-tight tracking-[-0.02em] max-w-5xl">
               We will add 10–20 qualified sales calls <br />
@@ -79,7 +80,7 @@ const HeroSection = () => {
                   height={64}
                   className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 inline-block"
                 />
-                <span className="bg-gradient-to-r from-primary to-light-blue bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
                   YouTube Sales Engine
                 </span>
                 in 90 days
@@ -105,9 +106,19 @@ const HeroSection = () => {
             </div>
 
             {/* CTA below video (now pushed down because of overlap) */}
-            <Link
+            {/* <Link
               href="#contact"
               className="inline-block px-8 py-4 text-base font-medium text-primary-foreground bg-gradient-to-r from-primary to-light-blue rounded-xl shadow-[0_4px_20px_rgba(66,133,244,0.4)] hover:shadow-[0_6px_25px_rgba(66,133,244,0.5)] transition-all duration-300 transform hover:-translate-y-1"
+            >
+              Apply To Work With Us
+            </Link> */}
+            <Link
+              href="#contact"
+              className="inline-block px-8 py-4 text-base font-medium 
+             text-white bg-white/20 backdrop-blur-2xl 
+             border border-white/30 
+             rounded-xl shadow-lg 
+             hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               Apply To Work With Us
             </Link>
