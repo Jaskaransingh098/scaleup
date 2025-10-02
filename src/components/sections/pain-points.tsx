@@ -1,5 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import { BarChart3, CalendarClock, Frown } from "lucide-react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Scissors, Workflow, PhoneCall } from "lucide-react";
+// import { BarChart3, CalendarClock, Frown } from "lucide-react";
 
 interface PainPoint {
   icon: React.ElementType;
@@ -9,41 +14,59 @@ interface PainPoint {
 
 const painPointsData: PainPoint[] = [
   {
-    icon: BarChart3,
-    title: "Struggling to Generate Leads Consistently?",
+    icon: Scissors,
+    title: "Turn Long Videos into a Waterfall of Content",
     description:
-      "In 2025, people buy from people. We help you attract qualified leads with content that builds trust and converts.",
+      "We repurpose your long-form videos into shorts, posts, and more — giving you consistent content without extra effort.",
   },
   {
-    icon: CalendarClock,
-    title: "No Time to Script & Edit?",
+    icon: Workflow,
+    title: "Pull Prospects into a Simple Pre-Call Flow",
     description:
-      "You shoot, we do the rest. We build and run your content engine — strategy, scripting, editing, and publishing — done for you.",
+      "Guide your prospects smoothly from content → pre-call flow → strategy call with a proven system.",
   },
   {
-    icon: Frown,
-    title: "Too many Unqualified Leads?",
+    icon: PhoneCall,
+    title: "Book 10–15 Qualified Strategy Calls/Month — Guaranteed",
     description:
-      "Attract the right prospects and book better calls with content that filters out your time wasters.",
+      "Our process is designed to fill your calendar with qualified calls — not just views or likes.",
   },
 ];
 
 const PainPoints = () => {
   return (
-    <section className="py-30 bg-transparent text-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight md:leading-[56px]">
-            Does This <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">Sound Like You?</span>
-          </h2>
+    <section className="relative z-10 pt-10 pb-30 bg-transparent text-white ">
+      <div className="container mx-auto px-6 z-20">
+        <div className="flex justify-center mb-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/30 px-4 py-2"
+          >
+            <span className="text-sm font-medium text-white">The Solution</span>
+          </motion.div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="text-center mb-16">
+          <h2
+            className="inline-block px-6 py-3 text-4xl md:text-5xl font-semibold leading-tight md:leading-[56px] 
+      bg-black/30 backdrop-blur-2xl border border-white/30 
+      rounded-full shadow-lg"
+          >
+            The Social{" "}
+            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
+              Selling System™
+            </span>
+          </h2>
+          <p className="pt-7 text-2xl">A 111-day content funnel that:</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 z-30">
           {painPointsData.map((point, index) => {
             const Icon = point.icon;
             return (
               <div
                 key={index}
-                className="relative bg-card border border-border rounded-3xl p-8 overflow-hidden h-full"
+                className="relative bg-card border border-border rounded-3xl p-8 overflow-hidde h-full"
               >
                 {/* <Image
                   src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/svgs/WcrHWFTN7cBpOOCJ3uhVkpsJXQ-4.svg?"
@@ -52,8 +75,8 @@ const PainPoints = () => {
                   height={237}
                   className="absolute top-0 left-0 w-full h-auto object-cover pointer-events-none mix-blend-plus-lighter"
                 /> */}
-                <div className="absolute top-0 left-0 w-full h-0.5 bg-purple-700" />
-                <div className="relative z-10 flex flex-col items-start gap-6 h-full">
+                <div className="absolute top-0 left-0 w-full h-0.5 z-20" />
+                <div className="relative z-20 flex flex-col items-start gap-6 h-full">
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Icon className="w-7 h-7 text-purple-600" />
                   </div>
@@ -69,6 +92,26 @@ const PainPoints = () => {
               </div>
             );
           })}
+        </div>
+        <div className="text-center mt-12">
+          <p className="text-lg md:text-xl text-gray-300 mb-6">
+            <span className="text-white font-medium">
+              You record. We handle the rest.
+            </span>
+          </p>
+          <motion.a
+            href="#apply"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-full shadow-lg"
+          >
+            <Link
+              href="#contact"
+              // className="inline-block mb-6 px-8 py-4 text-base font-medium "
+            >
+              Apply for Your 111-Day Sprint
+            </Link>
+          </motion.a>
         </div>
       </div>
     </section>

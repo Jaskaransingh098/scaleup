@@ -120,7 +120,7 @@ const ResultsShowcase = () => {
       </video>
 
       {/* Overlay to make content readable */}
-      <div className="absolute inset-0 bg-black/50 rounded-4xl z-10"></div>
+      <div className="absolute inset-0 bg-gray-900 rounded-4xl z-10"></div>
 
       <div className="relative z-20 container mx-auto px-6">
         <div className="text-center mb-12 lg:mb-20">

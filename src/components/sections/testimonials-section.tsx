@@ -23,7 +23,7 @@ const duplicatedTestimonials = [...testimonials, ...testimonials, ...testimonial
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="relative min-h-screen w-full overflow-hidden bg-transparent py-32">
+    <section id="testimonials" className="relative min-h-screen w-full overflow-hidden bg-transparent pt-32">
       <div className="container relative mx-auto flex flex-col items-center px-6">
         <div className="relative flex flex-col items-center gap-6 px-0 lg:px-20">
           <div className="absolute top-[-50px] left-[-100px] hidden -rotate-12 transform-gpu lg:block xl:left-[-50px] 2xl:left-0">

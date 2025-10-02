@@ -3,7 +3,13 @@
 import Image from "next/image";
 import { Play } from "lucide-react";
 import Link from "next/link";
-import Squares from "../ui/Squares";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import StarfieldBackground from "../ui/StartfieldBackground";
 
 const HeroSection = () => {
   // Keyframes for custom animations to match the glowing effect, as requested.
@@ -14,27 +20,33 @@ const HeroSection = () => {
     }
   `;
 
+  const icons = [
+    { icon: <FaFacebookF />, link: "https://facebook.com" },
+    { icon: <FaInstagram />, link: "https://instagram.com" },
+  ];
+
   return (
     <>
       <style>{animationStyles}</style>
       <section
         id="home"
-        className="relative w-full h-[1400px] overflow-hidden z-2"
+        className="relative w-full overflow-hidden z-2"
         style={{
           background: "linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045)",
         }}
       >
-        <div className="absolute inset-0 z-10">
-          <Squares
+        <div className="absolute inset-0 -z-10">
+          {/* <Squares
             speed={0.2}
             squareSize={120}
             direction="diagonal"
             borderColor="#fff"
             hoverFillColor="#222"
-          />
+          /> */}
+          <StarfieldBackground />
         </div>
         {/* Background image */}
-        <div className="absolute inset-0 z-10" style={{opacity: 0.7}}>
+        <div className="absolute inset-0 z-0" style={{ opacity: 0.7 }}>
           <Image
             // src="https://framerusercontent.com/images/xdaPXOEtPIASFiIeYk976HyJA.svg"
             src="/hero-pic.png"
@@ -86,26 +98,38 @@ const HeroSection = () => {
             </div> */}
 
             <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold text-text-primary leading-tight tracking-[-0.02em] max-w-5xl">
-              We will add 10–20 qualified sales calls <br />
-              to your business every month with our Done-For-You <br />
-              <span className="inline-flex items-center justify-center flex-wrap gap-x-3 gap-y-2 mt-4">
-                <Image
-                  src="https://framerusercontent.com/images/JIdFmDjb13Bd3Q9MGRPlBgWOjHg.png"
-                  alt="YouTube icon"
-                  width={64}
-                  height={64}
-                  className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 inline-block"
-                />
+              You don’t need “more content.” You need clients. <br />
+              That’s why we built The Social Selling System™ <br />
+              <span className="inline-flex items-center justify-center flex-wrap gap-x-10 gap-y-5 mt-10">
+                {icons.map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors text-7xl"
+                    style={{
+                      color:
+                        "linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      display: "inline-block",
+                    }}
+                  >
+                    {item.icon}
+                  </a>
+                ))}
                 <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
-                  YouTube Sales Engine
+                  A plug-and-play YouTube + short-form system that fills your
+                  calendar with ready-to-buy leads.
                 </span>
-                in 90 days
+                in 110 days
               </span>
             </h1>
 
-            <p className="text-xl italic text-text-secondary">
+            {/* <p className="text-xl italic text-text-secondary">
               (Or You Don’t Pay)
-            </p>
+            </p> */}
 
             <p className="max-w-2xl text-lg text-text-accent">
               Get more leads without sending 1000s cold emails/day, spending a
@@ -130,7 +154,7 @@ const HeroSection = () => {
             </Link> */}
             <Link
               href="#contact"
-              className="inline-block px-8 py-4 text-base font-medium 
+              className="inline-block mb-6 px-8 py-4 text-base font-medium 
              text-white bg-white/20 backdrop-blur-2xl 
              border border-white/30 
              rounded-xl shadow-lg 

@@ -13,6 +13,8 @@ import FaqSection from "@/components/sections/faq-section";
 import FinalCtaSection from "@/components/sections/final-cta";
 import RevealOnScroll from "@/components/ui/reveal-on-scroll";
 import Footer from "@/components/sections/footer";
+import Problem from "@/components/sections/problem";
+import StarfieldBackground from "../components/ui/StartfieldBackground";
 import RippleGrid from "@/components/ui/RippleGrid";
 import Squares from "@/components/ui/Squares";
 
@@ -26,7 +28,7 @@ export default function HomePage() {
     >
       {/* Background image */}
       {/* <div className="absolute inset-0 bg-[url('/bg-new2.png')] bg-no-repeat bg-center bg-fixed bg-cover z-0" /> */}
-      <div className="fixed inset-0 z-[5]" style={{ opacity: 0.3 }}>
+      {/* <div className="fixed inset-0 z-[5]" style={{ opacity: 0.3 }}>
         <Squares
           speed={0.2}
           squareSize={120}
@@ -34,8 +36,8 @@ export default function HomePage() {
           borderColor="#fff"
           hoverFillColor="#222"
         />
-      </div>
-
+      </div> */}
+      {/* <StarfieldBackground /> */}
       {/* Dark overlay */}
       <div
         className="absolute inset-0 z-10 pointer-events-none"
@@ -52,16 +54,20 @@ export default function HomePage() {
         <main className="pt-[0px]">
           <HeroSection />
 
-          <RevealOnScroll delay={0.05}>
-            <StatsSection />
-          </RevealOnScroll>
-
           <div>
-            <CaseStudiesHeader />
+            <StatsSection />
           </div>
 
-          <div className="py-24">
+          <div>
+            <Problem />
+          </div>
+
+          <div className="">
             <PainPoints />
+          </div>
+          
+          <div>
+            <CaseStudiesHeader />
           </div>
 
           <div id="results" className="scroll-mt-[110px]">
@@ -72,9 +78,9 @@ export default function HomePage() {
             <ProcessSection />
           </div>
 
-          <div>
+          {/* <div>
             <TestimonialsSection />
-          </div>
+          </div> */}
 
           <div>
             <div id="portfolio" className="scroll-mt-[110px]">

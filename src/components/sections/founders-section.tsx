@@ -101,14 +101,17 @@ export default function FoundersSection() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-xl mx-auto text-center mb-[60px]">
+        <div className="max-w-xl mx-auto text-center mb-[60px] ">
+          <div className='bg-black/30 backdrop-blur-2xl border border-white/30 
+      rounded-full shadow-lg p-4'>
           <h2 className="text-[48px] font-semibold text-text-primary leading-[56px]">
             Meet our{' '}
-            <span className="bg-gradient-to-r from-primary to-light-blue bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
               Founders
             </span>
           </h2>
-          <p className="mt-4 text-lg text-text-secondary">
+          </div>
+          <p className="mt-4 text-lg text-white">
             Wonder who's behind all this creative goodness? Say hello to our crew of superheroes.
           </p>
         </div>

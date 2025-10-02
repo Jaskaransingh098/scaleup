@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   { text: "24/7 support" },
@@ -10,16 +10,20 @@ const features = [
 
 const FinalCtaSection = () => {
   return (
-    <section id="contact" className="relative w-full py-[120px] bg-transparent text-foreground overflow-x-clip">
-      
-      
+    <section
+      id="contact"
+      className="relative w-full py-[120px] bg-transparent text-foreground overflow-x-clip"
+    >
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="flex flex-col items-center">
-          <h1 className="text-[50px] font-semibold leading-[60px] text-text-primary text-center max-w-4xl">
+        <div
+          className="inline-block bg-black/30 backdrop-blur-2xl border border-white/30 
+  rounded-full shadow-lg px-6 py-4 mx-auto"
+        >
+          <h1 className="text-[50px] font-semibold leading-[60px] text-text-primary text-center whitespace-nowrap">
             Let us help you take your business
           </h1>
-          <h1 className="text-[50px] font-semibold leading-[60px] text-center max-w-4xl">
-            <span className="bg-gradient-to-b from-[#4285F4] to-[#B497FF] bg-clip-text text-transparent">
+          <h1 className="text-[50px] font-semibold leading-[60px] text-center whitespace-nowrap">
+            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
               to the next big step:
             </span>
           </h1>
@@ -46,7 +50,9 @@ const FinalCtaSection = () => {
                         height={24}
                       />
                     </div>
-                    <p className="text-lg text-secondary-foreground whitespace-nowrap">{feature.text}</p>
+                    <p className="text-lg text-secondary-foreground whitespace-nowrap">
+                      {feature.text}
+                    </p>
                   </div>
                 ))}
               </div>

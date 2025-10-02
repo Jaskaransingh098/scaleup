@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import ScrollStack from "../ui/ScrollStack";
 
+
 const CaseStudiesHeader = () => {
   const projects = [
     {
@@ -42,9 +43,10 @@ const CaseStudiesHeader = () => {
   ];
 
   return (
-    <section className="bg-transparent py-[120px]">
+    <section className="bg-transparent py-[20px] z-20">
       <div className="container mx-auto flex flex-col items-center justify-center gap-10 text-center">
-        <div className="flex w-full max-w-[800px] flex-col items-center">
+        <div className="flex w-full max-w-[800px] flex-col items-center  bg-black/30 backdrop-blur-2xl border border-white/30 
+      rounded-full shadow-lg p-2 relative z-20">
           <h1 className="text-[48px] font-semibold leading-[56px] text-text-primary">
             Look at
           </h1>
@@ -54,9 +56,9 @@ const CaseStudiesHeader = () => {
             </span>
           </h1>
         </div>
-        <ScrollStack projects={projects} />
+        <ScrollStack projects={projects}/>
 
-        <Link
+        {/* <Link
           href="#contact"
           className="inline-block p-4 text-white bg-white/20 backdrop-blur-2xl 
              border border-white/30 
@@ -64,7 +66,7 @@ const CaseStudiesHeader = () => {
              hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
         >
           Apply To Work With Us
-        </Link>
+        </Link> */}
       </div>
     </section>
   );

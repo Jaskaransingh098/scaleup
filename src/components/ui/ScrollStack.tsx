@@ -46,7 +46,7 @@ export const Card = ({
   return (
     <div
       ref={container}
-      className="h-screen w-full flex items-center justify-center sticky top-0"
+      className="h-screen w-full flex items-center justify-center sticky top-0 z-20"
     >
       <motion.div
         style={{

@@ -273,3 +273,18 @@ nextjs-portal {
   display: flex;
   animation: marquee 60s linear infinite;
 }
+
+@keyframes diagonal-loop {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(60px, 60px);
+    /* shift diagonally right + down */
+  }
+}
+
+.animate-diagonal-loop {
+  animation: diagonal-loop 3s linear infinite;
+}
