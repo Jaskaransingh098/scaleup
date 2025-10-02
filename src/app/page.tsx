@@ -26,7 +26,7 @@ export default function HomePage() {
     >
       {/* Background image */}
       {/* <div className="absolute inset-0 bg-[url('/bg-new2.png')] bg-no-repeat bg-center bg-fixed bg-cover z-0" /> */}
-      <div className="fixed inset-0 z-20" style={{ opacity: 0.3 }}>
+      <div className="fixed inset-0 z-[5]" style={{ opacity: 0.3 }}>
         <Squares
           speed={0.2}
           squareSize={120}

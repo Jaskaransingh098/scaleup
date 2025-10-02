@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Play } from "lucide-react";
 import Link from "next/link";
+import Squares from "../ui/Squares";
 
 const HeroSection = () => {
   // Keyframes for custom animations to match the glowing effect, as requested.
@@ -16,9 +17,24 @@ const HeroSection = () => {
   return (
     <>
       <style>{animationStyles}</style>
-      <section id="home" className="relative w-full h-[1400px] overflow-hidden">
+      <section
+        id="home"
+        className="relative w-full h-[1400px] overflow-hidden z-2"
+        style={{
+          background: "linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045)",
+        }}
+      >
+        <div className="absolute inset-0 z-10">
+          <Squares
+            speed={0.2}
+            squareSize={120}
+            direction="diagonal"
+            borderColor="#fff"
+            hoverFillColor="#222"
+          />
+        </div>
         {/* Background image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-10" style={{opacity: 0.7}}>
           <Image
             // src="https://framerusercontent.com/images/xdaPXOEtPIASFiIeYk976HyJA.svg"
             src="/hero-pic.png"
@@ -30,13 +46,13 @@ const HeroSection = () => {
         </div>
 
         {/* Dark gradient fade at bottom */}
-        <div
+        {/* <div
           className="absolute inset-x-0 bottom-0 h-full z-10 pointer-events-none"
           style={{
             background:
               "linear-gradient(to top, #0a1a2b 0%, rgba(10,26,43,0.8) 20%, transparent 60%)",
           }}
-        />
+        /> */}
 
         {/* Left glow */}
         <div

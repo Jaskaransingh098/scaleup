@@ -19,7 +19,7 @@ export default function HeaderNavigation() {
   const [open, setOpen] = useState(false);
   return (
     <header
-      className="absolute top-0 left-0 right-0 z-50 
+      className="absolute top-3 left-0 right-0 z-50 
   bg-white/10 backdrop-blur-2xl 
 
   border border-white/30 
