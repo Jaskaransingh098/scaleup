@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="relative min-h-screen bg-[#020B1F] overflow-hidden flex flex-col">
+    <div className="relative min-h-screen bg-[#020B1F] overflow-hidden flex flex-col z-20">
       {/* 3D Perspective Grid Background */}
       <div className="absolute inset-0">
         <svg className="w-full h-full" preserveAspectRatio="none">

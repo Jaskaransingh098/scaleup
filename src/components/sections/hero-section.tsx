@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Play } from "lucide-react";
 import Link from "next/link";
+import { ContainerScroll } from "../ui/container-scroll";
 import {
   FaFacebookF,
   FaTwitter,
@@ -91,11 +92,55 @@ const HeroSection = () => {
         </div>
 
         {/* Content */}
+        {/* <div className="flex flex-col overflow-hidden pb-[0px] pt-[120px]">
+          <ContainerScroll
+            titleComponent={
+              <>
+                <h1 className="text-4xl font-semibold text-white dark:text-white">
+                  You don’t need “more content.” <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    You need clients.
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <div>
+              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold text-black leading-tight tracking-[-0.02em]">
+                That’s why we built The Social Selling System™ <br />
+                <span className="inline-flex items-center justify-center flex-wrap gap-x-10 gap-y-5 mt-10">
+                  {icons.map((item, index) => (
+                    <a
+                      key={index}
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors text-7xl"
+                      style={{
+                        color:
+                          "linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        display: "inline-block",
+                      }}
+                    >
+                      {item.icon}
+                    </a>
+                  ))}
+                  <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
+                    A plug-and-play YouTube + short-form system that fills your
+                    calendar with ready-to-buy leads.
+                  </span>
+                  in 111 days
+                </span>
+              </h1>
+            </div>
+           
+          </ContainerScroll>
+        </div> */}
         <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
-          <div className="pt-70 flex flex-col items-center gap-6">
-            {/* <div className="inline-block px-4 py-2 text-sm font-medium border rounded-full text-text-accent bg-card/50 border-border backdrop-blur-[2px]">
-              For Agencies, Coaches & Software Companies
-            </div> */}
+          <div className="pt-60 flex flex-col items-center gap-6">
+           
 
             <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold text-text-primary leading-tight tracking-[-0.02em] max-w-5xl">
               You don’t need “more content.” You need clients. <br />
@@ -123,20 +168,18 @@ const HeroSection = () => {
                   A plug-and-play YouTube + short-form system that fills your
                   calendar with ready-to-buy leads.
                 </span>
-                in 110 days
+                in 111 days
               </span>
             </h1>
 
-            {/* <p className="text-xl italic text-text-secondary">
-              (Or You Don’t Pay)
-            </p> */}
+           
 
             <p className="max-w-2xl text-lg text-text-accent">
               Get more leads without sending 1000s cold emails/day, spending a
               dime on paid ads, or creating boring content
             </p>
 
-            {/* Play Section Overlapping Background */}
+         
             <div className="relative w-full max-w-4xl mx-auto pt-34 border shadow-2xl group aspect-video rounded-3xl bg-card/30 backdrop-blur-sm border-border shadow-black/20 z-20">
               <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-3xl">
                 <div className="flex items-center justify-center w-20 h-20 transition-transform duration-300 rounded-full bg-black/50 group-hover:scale-110">
@@ -145,13 +188,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* CTA below video (now pushed down because of overlap) */}
-            {/* <Link
-              href="#contact"
-              className="inline-block px-8 py-4 text-base font-medium text-primary-foreground bg-gradient-to-r from-primary to-light-blue rounded-xl shadow-[0_4px_20px_rgba(66,133,244,0.4)] hover:shadow-[0_6px_25px_rgba(66,133,244,0.5)] transition-all duration-300 transform hover:-translate-y-1"
-            >
-              Apply To Work With Us
-            </Link> */}
+          
             <Link
               href="#contact"
               className="inline-block mb-6 px-8 py-4 text-base font-medium 
@@ -160,7 +197,7 @@ const HeroSection = () => {
              rounded-xl shadow-lg 
              hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              Apply To Work With Us
+              Get The System (Free Audit Call)
             </Link>
           </div>
         </div>

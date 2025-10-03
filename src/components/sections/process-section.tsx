@@ -137,7 +137,7 @@ const ProcessSection = () => {
           </span>
         </div>
         <div className=" bg-black/30 backdrop-blur-2xl border border-white/30 
-      rounded-full shadow-lg p-4">
+      rounded-4xl shadow-lg p-4">
         <h2 className="text-center text-[48px] font-semibold leading-[56px] text-foreground max-w-3xl">
           Simple{" "}
           <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">

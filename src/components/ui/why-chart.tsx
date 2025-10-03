@@ -249,10 +249,10 @@ function whyChart() {
           <Table className="bg-transparent z-20">
             <TableHeader>
               <TableRow className="border-b-2 border-border hover:bg-transparent">
-                <TableHead className="w-1/3 text-base">Feature</TableHead>
+                <TableHead className="w-1/3 text-base p-6">Feature</TableHead>
                 <TableHead className="w-1/3 text-base text-center">
                   <div className="flex flex-col items-center gap-0">
-                    <X className="h-5 w-5 text-red-500 top-13" />
+                    <X className="h-5 w-5 text-red-500" />
                     <span>Generic Agency</span>
                   </div>
                 </TableHead>

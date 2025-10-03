@@ -20,11 +20,11 @@ const FinalCtaSection = () => {
   rounded-full shadow-lg px-6 py-4 mx-auto"
         >
           <h1 className="text-[50px] font-semibold leading-[60px] text-text-primary text-center whitespace-nowrap">
-            Let us help you take your business
+            Stop posting.
           </h1>
           <h1 className="text-[50px] font-semibold leading-[60px] text-center whitespace-nowrap">
             <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
-              to the next big step:
+              Start selling.
             </span>
           </h1>
         </div>
@@ -33,13 +33,14 @@ const FinalCtaSection = () => {
           <div className="relative p-[1px] bg-gradient-to-b from-white/20 to-transparent rounded-[20px]">
             <div className="bg-card rounded-[19px] p-10 flex flex-col items-center">
               <h2 className="text-[40px] font-semibold leading-[48px] text-text-primary text-center">
-                Book Your Strategy Call Today!
+                Get your free strategy audit now!
               </h2>
               <p className="mt-2.5 text-base text-secondary-foreground text-center">
-                Don't let your competitors steal this opportunity!
+                And see how The Social Selling System™ can fill your calendar
+                in 111 days.
               </p>
 
-              <div className="mt-10 flex justify-center items-center gap-10 flex-wrap">
+              {/* <div className="mt-10 flex justify-center items-center gap-10 flex-wrap">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-6 h-6 flex-shrink-0">
@@ -55,7 +56,7 @@ const FinalCtaSection = () => {
                     </p>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               <div className="relative mt-10 w-fit mx-auto">
                 <Image
@@ -69,7 +70,7 @@ const FinalCtaSection = () => {
                   href="#contact"
                   className="relative z-10 inline-block py-4 px-8 text-lg font-semibold text-white bg-gradient-to-b from-primary to-[#3c78da] rounded-xl shadow-[0_10px_30px_0_rgba(66,133,244,0.3)] transition-transform hover:-translate-y-0.5"
                 >
-                  Book a Call
+                  Claim Your Free Audit
                 </Link>
               </div>
             </div>
