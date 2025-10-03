@@ -34,7 +34,7 @@ const VideoExamples = () => {
   return (
     <section
       id="video-examples"
-      className="relative w-full bg-background py-[0px] overflow-hidden"
+      className="relative w-full bg-background py-[0px] overflow-hidden z-20"
     >
       <Image
         src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/svgs/JmnNBcgGwOAnsO70g5notRa1v1k-17.svg?"

@@ -32,9 +32,11 @@ const HeroSection = () => {
       <section
         id="home"
         className="relative w-full overflow-hidden z-2"
-        style={{
-          background: "linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045)",
-        }}
+        style={
+          {
+            // background: "linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045)",
+          }
+        }
       >
         <div className="absolute inset-0 -z-10">
           {/* <Squares
@@ -140,11 +142,12 @@ const HeroSection = () => {
         </div> */}
         <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
           <div className="pt-60 flex flex-col items-center gap-6">
-           
-
-            <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold text-text-primary leading-tight tracking-[-0.02em] max-w-5xl">
-              You don’t need “more content.” You need clients. <br />
-              That’s why we built The Social Selling System™ <br />
+            <h1 className="text-3xl sm:text-4xl lg:text-[45px] font-light text-text-primary leading-tight tracking-[-0.02em] max-w-5xl">
+              You don’t need “more content.” You need clients. That’s why we
+              built - <br />{" "}
+              <span className="pt-2 bg-[linear-gradient(to_right,#d38312,#a83279)] bg-clip-text text-transparent">
+                The Social Selling System™
+              </span>
               <span className="inline-flex items-center justify-center flex-wrap gap-x-10 gap-y-5 mt-10">
                 {icons.map((item, index) => (
                   <a
@@ -164,22 +167,26 @@ const HeroSection = () => {
                     {item.icon}
                   </a>
                 ))}
-                <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
-                  A plug-and-play YouTube + short-form system that fills your
-                  calendar with ready-to-buy leads.
+                <span className="font-light">
+                  A{" "}
+                  <span className="bg-[linear-gradient(to_right,#d38312,#a83279)] bg-clip-text text-transparent">
+                    plug-and-play
+                  </span>{" "}
+                  YouTube + short-form system that fills your calendar with{" "}
+                  <span className="bg-[linear-gradient(to_right,#d38312,#a83279)] bg-clip-text text-transparent">
+                    ready-to-buy
+                  </span>{" "}
+                  leads.
                 </span>
                 in 111 days
               </span>
             </h1>
-
-           
 
             <p className="max-w-2xl text-lg text-text-accent">
               Get more leads without sending 1000s cold emails/day, spending a
               dime on paid ads, or creating boring content
             </p>
 
-         
             <div className="relative w-full max-w-4xl mx-auto pt-34 border shadow-2xl group aspect-video rounded-3xl bg-card/30 backdrop-blur-sm border-border shadow-black/20 z-20">
               <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-3xl">
                 <div className="flex items-center justify-center w-20 h-20 transition-transform duration-300 rounded-full bg-black/50 group-hover:scale-110">
@@ -188,7 +195,6 @@ const HeroSection = () => {
               </div>
             </div>
 
-          
             <Link
               href="#contact"
               className="inline-block mb-6 px-8 py-4 text-base font-medium 

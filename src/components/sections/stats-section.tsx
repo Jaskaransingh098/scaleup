@@ -93,9 +93,9 @@ const StatsSection = () => {
           className=" bg-black/30 backdrop-blur-2xl border border-white/30 
       rounded-full shadow-lg p-4 relative z-20"
         >
-          <h2 className="text-5xl font-semibold text-text-primary">
+          <h2 className="text-5xl font-light text-text-primary">
             Why{" "}
-            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
+            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-light">
               Choose us?
             </span>
           </h2>

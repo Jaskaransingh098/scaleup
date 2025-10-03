@@ -54,8 +54,8 @@ export const Card = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="flex flex-col relative -top-[25%] 
-             h-[450px] md:h-[550px] lg:h-[650px] 
+        className="flex flex-col relative -top-[15%] 
+             h-[450px] md:h-[550px] lg:h-[350px] 
              w-[95%] md:w-[90%] lg:w-[88%] xl:w-[85%] 2xl:w-[80%] 
              max-w-[1600px] rounded-md p-10 origin-top"
       >
@@ -84,7 +84,7 @@ export const Card = ({
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-1/2 relative h-64 md:h-full rounded-lg overflow-hidden">
+          <div className="w-full md:w-1/2 relative h-34 md:h-full rounded-lg overflow-hidden">
             <motion.div className="w-full h-full" style={{ scale: imageScale }}>
               <img
                 src={url}

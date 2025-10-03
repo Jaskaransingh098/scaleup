@@ -1,6 +1,7 @@
-import Image from 'next/image';
-import { Linkedin, Twitter, Instagram, Youtube } from 'lucide-react';
-import React from 'react';
+import Image from "next/image";
+import { Linkedin, Twitter, Instagram, Youtube } from "lucide-react";
+import React from "react";
+import InfoCards from "../ui/profile-cards";
 
 interface SocialItem {
   icon: React.ElementType;
@@ -17,63 +18,71 @@ interface Founder {
 
 const founders: Founder[] = [
   {
-    name: 'Kunal Jiwani',
-    description: 'is the strategic brain behind every campaign, focused on delivering outcomes that truly move the needle. From positioning to performance, he makes sure every client feels seen, heard, and set up for long-term success.',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/images/YTK03nRnd1BWYvAAk81F9JUSkHM.png?',
+    name: "Kunal Jiwani",
+    description:
+      "is the strategic brain behind every campaign, focused on delivering outcomes that truly move the needle. From positioning to performance, he makes sure every client feels seen, heard, and set up for long-term success.",
+    image: "/",
     socials: [
       {
         icon: Linkedin,
-        href: 'https://www.linkedin.com/in/kunaljiwani/',
-        name: 'LinkedIn'
+        href: "https://www.linkedin.com/in/kunaljiwani/",
+        name: "LinkedIn",
       },
       {
         icon: Twitter,
-        href: 'https://x.com/JiwaniKunal',
-        name: 'Twitter'
+        href: "https://x.com/JiwaniKunal",
+        name: "Twitter",
       },
-      { 
-        icon: Instagram, 
-        href: 'https://www.instagram.com/kunal_jiwani/', 
-        name: 'Instagram' 
+      {
+        icon: Instagram,
+        href: "https://www.instagram.com/kunal_jiwani/",
+        name: "Instagram",
       },
-      { 
-        icon: Youtube, 
-        href: 'https://www.youtube.com/@KunalJiwani', 
-        name: 'YouTube' 
-      }
-    ]
+      {
+        icon: Youtube,
+        href: "https://www.youtube.com/@KunalJiwani",
+        name: "YouTube",
+      },
+    ],
   },
   {
-    name: 'Gandharv Mendhe',
-    description: 'ensures everything runs like clockwork — from internal workflows to client check-ins. With a sharp eye for detail and a human-first approach, he turns complex projects into smooth, collaborative experiences.',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/images/nsrH7MCMQRg6TV3NfB09u4br2ys.png?',
+    name: "Gandharv Mendhe",
+    description:
+      "ensures everything runs like clockwork — from internal workflows to client check-ins. With a sharp eye for detail and a human-first approach, he turns complex projects into smooth, collaborative experiences.",
+    image:
+      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/images/nsrH7MCMQRg6TV3NfB09u4br2ys.png?",
     socials: [
       {
         icon: Linkedin,
-        href: 'https://www.linkedin.com/in/gandharv-mendhe-994881212/',
-        name: 'LinkedIn'
+        href: "https://www.linkedin.com/in/gandharv-mendhe-994881212/",
+        name: "LinkedIn",
       },
       {
         icon: Twitter,
-        href: 'https://x.com/gandharv_mendhe',
-        name: 'Twitter'
+        href: "https://x.com/gandharv_mendhe",
+        name: "Twitter",
       },
-      { 
-        icon: Instagram, 
-        href: 'https://www.instagram.com/gandharvmendhe/', 
-        name: 'Instagram' 
+      {
+        icon: Instagram,
+        href: "https://www.instagram.com/gandharvmendhe/",
+        name: "Instagram",
       },
-      { 
-        icon: Youtube, 
-        href: 'https://www.youtube.com/@gandharvmendhe', 
-        name: 'YouTube' 
-      }
-    ]
-  }
+      {
+        icon: Youtube,
+        href: "https://www.youtube.com/@gandharvmendhe",
+        name: "YouTube",
+      },
+    ],
+  },
 ];
 
 const SocialIcon: React.FC<SocialItem> = ({ icon: Icon, href, name }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" aria-label={`Link to ${name}`}>
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={`Link to ${name}`}
+  >
     <div className="w-11 h-11 flex items-center justify-center bg-primary/10 rounded-lg group hover:bg-primary/20 transition-colors">
       <Icon className="w-5 h-5 text-primary" />
     </div>
@@ -102,21 +111,25 @@ export default function FoundersSection() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-xl mx-auto text-center mb-[60px] ">
-          <div className='bg-black/30 backdrop-blur-2xl border border-white/30 
-      rounded-full shadow-lg p-4'>
-          <h2 className="text-[48px] font-semibold text-text-primary leading-[56px]">
-            Meet our{' '}
-            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
-              Founders
-            </span>
-          </h2>
+          <div
+            className="bg-black/30 backdrop-blur-2xl border border-white/30 
+      rounded-full shadow-lg p-4"
+          >
+            <h2 className="text-[48px] font-semibold text-text-primary leading-[56px]">
+              Meet our{" "}
+              <span className="bg-[linear-gradient(to_right,#d38312,#a83279)] bg-clip-text text-transparent font-bold">
+                Founders
+              </span>
+            </h2>
           </div>
           <p className="mt-4 text-lg text-white">
-            Wonder who's behind all this creative goodness? Say hello to our crew of superheroes.
+            Wonder who's behind all this creative goodness? Say hello to our
+            crew of superheroes.
           </p>
         </div>
+        <InfoCards />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[40px] max-w-6xl mx-auto">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-[40px] max-w-6xl mx-auto">
           {founders.map((founder, index) => (
             <div key={index} className="bg-card border border-border rounded-3xl overflow-hidden flex flex-col">
               <div className="relative w-full aspect-[580/388]">
@@ -141,7 +154,7 @@ export default function FoundersSection() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -49,12 +49,12 @@ const PainPoints = () => {
         </div>
         <div className="text-center mb-16">
           <h2
-            className="inline-block px-6 py-3 text-4xl md:text-5xl font-semibold leading-tight md:leading-[56px] 
+            className="inline-block px-6 py-3 text-4xl md:text-5xl font-light leading-tight md:leading-[56px] 
       bg-black/30 backdrop-blur-2xl border border-white/30 
       rounded-full shadow-lg"
           >
             The Social{" "}
-            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
+            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-light">
               Selling System™
             </span>
           </h2>

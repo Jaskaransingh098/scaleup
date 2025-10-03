@@ -65,7 +65,7 @@ function DarkGradientBg({ children, className }: DarkGradientBgProps) {
         // }}
       />
 
-      <div className="absolute inset-0 bg-gradient-radial from-slate-800/20 via-transparent to-transparent" />
+      {/* <div className="absolute inset-0 bg-gradient-radial from-slate-800/20 via-transparent to-transparent" /> */}
 
       <div className={cn("relative z-10", className)}>{children}</div>
     </div>
@@ -112,7 +112,7 @@ function ContentClientsSection() {
   }, []);
 
   return (
-    <DarkGradientBg>
+    // <DarkGradientBg>
       <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-7xl">
           <section className="relative py-0 md:py-32">
@@ -283,11 +283,11 @@ function ContentClientsSection() {
               </div>
             </motion.div>
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10 rounded-full blur-3xl pointer-events-none" />
+            {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10 rounded-full blur-3xl pointer-events-none" /> */}
           </section>
         </div>
       </div>
-    </DarkGradientBg>
+    // </DarkGradientBg>
   );
 }
 

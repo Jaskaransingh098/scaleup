@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +11,13 @@ const features = [
 ];
 
 const FinalCtaSection = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <section
       id="contact"
@@ -30,8 +39,8 @@ const FinalCtaSection = () => {
         </div>
 
         <div className="mt-[50px] max-w-3xl mx-auto">
-          <div className="relative p-[1px] bg-gradient-to-b from-white/20 to-transparent rounded-[20px]">
-            <div className="bg-card rounded-[19px] p-10 flex flex-col items-center">
+          <div className="relative p-[1px] ">
+            <div className="bg- rounded-[19px] p-10 flex flex-col items-center">
               <h2 className="text-[40px] font-semibold leading-[48px] text-text-primary text-center">
                 Get your free strategy audit now!
               </h2>
@@ -58,20 +67,21 @@ const FinalCtaSection = () => {
                 ))}
               </div> */}
 
-              <div className="relative mt-10 w-fit mx-auto">
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/svgs/eVPQSYBoVqwchmpN78sjyYtovY-23.svg?"
-                  alt="Grid pattern"
-                  width={177}
-                  height={59}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none"
+              <div className="relative mt-10 w-fit">
+                {/* Calendly Embed */}
+                <div
+                  className="calendly-inline-widget"
+                  data-url="https://calendly.com/aevolabs/30min?primary_color=8a15a0"
+                  style={{ minWidth: "1030px", height: "900px" }}
                 />
-                <Link
+
+                {/* CTA Button */}
+                {/* <Link
                   href="#contact"
-                  className="relative z-10 inline-block py-4 px-8 text-lg font-semibold text-white bg-gradient-to-b from-primary to-[#3c78da] rounded-xl shadow-[0_10px_30px_0_rgba(66,133,244,0.3)] transition-transform hover:-translate-y-0.5"
+                  className="relative z-10 inline-block mt-6 py-4 px-8 text-lg font-semibold text-white bg-gradient-to-b from-primary to-[#3c78da] rounded-xl shadow-[0_10px_30px_0_rgba(66,133,244,0.3)] transition-transform hover:-translate-y-0.5"
                 >
                   Claim Your Free Audit
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

@@ -20,55 +20,28 @@ import Squares from "@/components/ui/Squares";
 
 export default function HomePage() {
   return (
-    <div
-      className="relative min-h-screen"
-      style={{
-        background: "linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045)",
-      }}
-    >
-      {/* Background image */}
-      {/* <div className="absolute inset-0 bg-[url('/bg-new2.png')] bg-no-repeat bg-center bg-fixed bg-cover z-0" /> */}
-      {/* <div className="fixed inset-0 z-[5]" style={{ opacity: 0.3 }}>
-        <Squares
-          speed={0.2}
-          squareSize={120}
-          direction="diagonal" // up, down, left, right, diagonal
-          borderColor="#fff"
-          hoverFillColor="#222"
-        />
-      </div> */}
-      {/* <StarfieldBackground /> */}
-      {/* Dark overlay */}
-      <div
-        className="absolute inset-0 z-10 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%)",
-        }}
-      />
+    <div className="relative min-h-screen">
+      {/* Full-page gradient background */}
+      <div className="fixed inset-0 -z-10 bg-neutral-900">
+        {/* Radial glow */}
+        {/* <div className="absolute inset-0 bg-[radial-gradient(circle_560px_at_50%_200px,#38bdf8,transparent)]" />
+
+       
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#38bdf820_1px,transparent_1px),linear-gradient(to_bottom,#38bdf820_1px,transparent_1px)] bg-[size:18px_18px]" /> */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_50%_-10%,rgba(139,92,246,0.35),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_90%,rgba(34,197,94,0.2),transparent)]" />
+      </div>
 
       {/* Content */}
       <div className="relative z-20">
         <HeaderNavigation />
 
-        <main className="pt-[0px]">
+        <main className="pt-0">
           <HeroSection />
-
-          <div>
-            <StatsSection />
-          </div>
-
-          <div>
-            <Problem />
-          </div>
-
-          <div className="">
-            <PainPoints />
-          </div>
-          
-          <div>
-            <CaseStudiesHeader />
-          </div>
+          <StatsSection />
+          <Problem />
+          <PainPoints />
+          <CaseStudiesHeader />
 
           <div id="results" className="scroll-mt-[110px]">
             <ResultsShowcase />
@@ -78,35 +51,22 @@ export default function HomePage() {
             <ProcessSection />
           </div>
 
-          {/* <div>
-            <TestimonialsSection />
-          </div> */}
-
-          <div>
-            <div id="portfolio" className="scroll-mt-[110px]">
-              <VideoExamples />
-            </div>
+          <div id="portfolio" className="scroll-mt-[110px]">
+            <VideoExamples />
           </div>
 
-          <div>
-            <FoundersSection />
+          <FoundersSection />
+
+          <div id="faq" className="scroll-mt-[110px]">
+            <FaqSection />
           </div>
 
-          <div>
-            <div id="faq" className="scroll-mt-[110px]">
-              <FaqSection />
-            </div>
+          <div id="contact" className="scroll-mt-[110px]">
+            <FinalCtaSection />
           </div>
 
-          <div>
-            <div id="contact" className="scroll-mt-[110px]">
-              <FinalCtaSection />
-            </div>
-          </div>
-          <div>
-            <div id="contact" className="scroll-mt-[110px]">
-              <Footer />
-            </div>
+          <div id="footer" className="scroll-mt-[110px]">
+            <Footer />
           </div>
         </main>
       </div>

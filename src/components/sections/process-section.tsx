@@ -5,45 +5,42 @@ const processSteps = [
   {
     step: "Step 01",
     icon: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/svgs/jJ6toYSKz9DtEMWJDpteC9pF1HM-10.svg?",
-    title: "Discovery & Consultation",
+    title: "Blueprint",
     description: [
-      "1-on-1 call to understand your goals and niche",
-      "Audit your current brand & content presence",
-      "Identify bottlenecks in your lead",
-      "Align on outcomes & content direction",
+      "We design your funnel around your offer",
+      "Define your customer journey & positioning",
+      "Map out content pillars and funnel touchpoints",
     ],
   },
   {
     step: "Step 02",
     icon: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/svgs/AXgyjaoddAArynSnELMK0OyXdTc-11.svg?",
-    title: "Tailored Content Strategy",
+    title: "Create",
     description: [
-      "Build a personalized content roadmap",
-      "Platform-specific strategy (YouTube, Shorts, Reels)",
-      "Tone, voice, and audience targeting",
-      "Finalize scripts and content calendar",
+      "You record, we handle the rest",
+      "Strategy, scripting, editing, publishing done-for-you",
+      "Content adapted for YouTube, Shorts, Reels & more",
     ],
   },
   {
     step: "Step 03",
     icon: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/svgs/7YvpqdgJKVCiaafRYxXpuUlwE-12.svg?",
-    title: "Content Creation & Distribution",
+    title: "Convert",
     description: [
-      "Full editing, post-production, and repurposing",
-      "Publish across YouTube, Reels, LinkedIn & more",
-      "Optimize performance and engagement",
-      "Double down on what works with iterations",
+      "Calls booked directly into your calendar",
+      "Leads nurtured with strategic CTAs & funnels",
+      "Turn viewers into clients with clear conversion flows",
     ],
   },
   {
     step: "Step 04",
     icon: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/5ccec89d-7959-4c39-bc21-7fb146605244-scaleupmedia-in/assets/svgs/JQVOSvT8HSfik1as2hcjm0MO3I-13.svg?",
-    title: "Conversion Optimization",
+    title: "Scale",
     description: [
-      "Set up lead-gen landing pages that convert",
-      "Plug in VSLs, webinar funnels, or booking flows",
-      "Monitor metrics like CTR and conversion rates",
-      "Optimize copy, pages & flow monthly for ROI",
+      "Analyze results & double down on what works",
+      "Optimize campaigns monthly for higher ROI",
+      "Expand reach across new platforms & audiences",
+      "Build a repeatable system for growth",
     ],
   },
 ];
@@ -76,7 +73,6 @@ const ProcessCard = ({ step, icon, title, description }: ProcessCardProps) => {
       </div>
 
       <div className="relative z-10 flex flex-col gap-6">
-        
         <div
           className="mt-8 w-10 h-10 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]"
           style={{
@@ -136,19 +132,16 @@ const ProcessSection = () => {
             Process
           </span>
         </div>
-        <div className=" bg-black/30 backdrop-blur-2xl border border-white/30 
-      rounded-4xl shadow-lg p-4">
-        <h2 className="text-center text-[48px] font-semibold leading-[56px] text-foreground max-w-3xl">
-          Simple{" "}
-          <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
-            4-step process
-          </span>
-          <br />
-          to make your brand{" "}
-          <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-bold">
-            Go Big!
-          </span>
-        </h2>
+        <div
+          className=" bg-black/30 backdrop-blur-2xl border border-white/30 
+      rounded-4xl shadow-lg p-4"
+        >
+          <h2 className="text-center text-[48px] font-light leading-[56px] text-foreground max-w-3xl">
+            Three steps,{" "}
+            <span className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent font-light">
+              No fluff
+            </span>
+          </h2>
         </div>
 
         <div className="mt-20 grid w-full grid-cols-1 gap-6 md:grid-cols-2">

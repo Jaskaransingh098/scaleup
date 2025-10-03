@@ -237,7 +237,7 @@ function whyChart() {
           {/* <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
             WHY US — COMPARISON
           </h2> */}
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h1 className="text-4xl md:text-5xl font-light text-foreground mb-4">
             The Difference Is Clear
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
